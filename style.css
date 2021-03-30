@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+/* estrutura básica*/
+header {
+    text-align: center;
+    background: rgb(4, 68, 98);
+    padding: 2%; 
+}
+header h1 {
+    font-size: 300%;
+    color: white;
+}
+/*estilizando a barra de navegação*/
+nav ul {
+    list-style-type: none;
+    background-color: rgb(4, 68, 98);
+    overflow: hidden;
+    margin: 0;
+    padding: 0; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+nav li {
+    float: left;
+}
+nav a:hover {
+    background-color: white;
+    color:  rgb(4, 68, 98);
+}
+.foto_perfil {
+   width: 10%;
+   float: left;    
+}
+/* estilizando as divs */
+.row {
+    padding: 0 20px;/*espaçamento da borda do site 0 parte de cima e baixo 20px direita e esquerda */
+    display: table;
+}
+.row a {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    text-align: right;
+}
+
+section {
+    /*flutuar a esquerda */
+    float: left;
+    /*largura em 75% */
+    width: 75%;
+}
+aside {
+    float: left;
+    width: 50vh;
+    padding: 20px;
+}
+aside h3 {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 1%;
+    margin-top: 1%;
+}
+.card p {
+    font-size: 100%;
+}
+.card h2,h3 {
+    text-align: center;
+}
+.foto_tela {
+    width: 20%;
+    height: 30%;
+    float: unset;
+    padding: 10px;
+}
+.foto_mao {
+    width: 20%;
+    height: 30%;
+    padding: 10px;
+}
+.logo_html {
+    width: 5%;
+    height: 3%;
+    float: left;
+    padding: 10px;
+}
+.logo_css {
+    width: 5%;
+    height: 3%;
+    float: right;
+    padding: 10px;
+}
+/* estilizando o rodapé */
+footer {
+    padding: 20px;
+    background: rgb(4, 68, 98);        
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+footer ul {
+    list-style-type: none;
+    background-color: rgb(4, 68, 98);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    float: left;
+    padding-right: 30px;        
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+footer a:hover {
+    background-color: white;
+    color:   rgb(4, 68, 98);
+}
+@media only screen and (max-device-width: 480px){
+    aside  {
+        width: 100%;      
+        float: right;
+    }
+    .card{
+        width: 130%;
+    }
+}
